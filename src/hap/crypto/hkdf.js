@@ -23,7 +23,7 @@ function HKDF(hashAlg, salt, ikm, info, size) {
   var num_blocks = Math.ceil(size / hashLength);
   info = bufferShim.from(info);
 
-  for (var i=0; i<num_blocks; i++) {
+  for (var i = 0; i < num_blocks; i++) {
     var hmac = crypto.createHmac(hashAlg, prk);
 
     var input = Buffer.concat([
@@ -36,5 +36,5 @@ function HKDF(hashAlg, salt, ikm, info, size) {
     buffers.push(prev);
   }
   output = Buffer.concat(buffers, size);
-  return output.slice(0,size);
+  return output.slice(0, size);
 }

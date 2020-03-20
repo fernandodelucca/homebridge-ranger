@@ -99,7 +99,7 @@ const RangerPlatform = class {
     if (peripheral.advertisement.manufacturerData) {
       const data = ManufacturerDataParser(peripheral.advertisement.manufacturerData);
       if (data.isHAP) {
-        if (this._ensureMacAddressIsAvailable(peripheral)) {      
+        if (this._ensureMacAddressIsAvailable(peripheral)) {
           if (this._updateDevice(peripheral, data) === false) {
             this._addDevice(peripheral, data);
           }

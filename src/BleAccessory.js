@@ -22,7 +22,6 @@ const ServiceBlacklist = [
   '000000A2-0000-1000-8000-0026BB765291', // HAP-BLE Protocol Information Service
 ];
 
-
 class BleAccessory {
 
   constructor(api, log, noble, config) {

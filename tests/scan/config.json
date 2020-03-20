@@ -5,12 +5,10 @@
         "port": 51826,
         "pin": "031-45-154"
     },
-
     "platforms": [
         {
             "platform": "Ranger",
-            "devices": [
-            ]
+            "devices": []
         }
     ]
 }
